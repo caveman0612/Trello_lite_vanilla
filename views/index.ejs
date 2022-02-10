@@ -9,7 +9,7 @@
     <script src="scripts.js" defer></script>
   </head>
   <body>
-    <header><h1><%= locals.title %></h1></header>
+    <header><h1>Trello Lite</h1></header>
     <main>
       <div class="board">
         <!-- <div class="folder">
@@ -23,8 +23,8 @@
             <button type="submit" class="submit"></button>
           </form>
         </div> -->
-        <form action="submit" class="newButton">
-          <input type="text" placeholder="Add New Folder" />
+        <form action="/" class="newButton" method="post">
+          <input type="text" placeholder="Add New Folder" name="name" />
           <button type="submit" class="submit"></button>
         </form>
       </div>
